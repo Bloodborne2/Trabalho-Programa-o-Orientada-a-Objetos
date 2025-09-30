@@ -4,7 +4,7 @@ public class ArcoEFlecha extends Arma {
 
     public ArcoEFlecha(){
         super("Arco e Flecha", 250, 85 );
-        this.municao = 10; // Munição inicial
+        this.municao = 10; 
     }
 
     @Override

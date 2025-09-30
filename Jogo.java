@@ -10,7 +10,6 @@ public class Jogo {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        // --- CUSTOMIZAÇÃO DO JOGADOR ---
         System.out.println("### BEM-VINDO AO JOGO ###");
         System.out.print("Escolha seu nome: ");
         String nomeJogador = sc.nextLine();
@@ -26,14 +25,12 @@ public class Jogo {
             new Arma[]{ armaCurta, armaLonga }
         );
 
-        // --- DEFINIÇÃO DOS INIMIGOS ---
         List<Criatura> inimigos = Arrays.asList(
-            new EvilForsen(), // Inimigo 1: Bloqueio
-            new Hades(),     // Inimigo 2: Esquiva e ataque aleatório/falha
-            new Zote()     // Inimigo 3: Defesa Híbrida
+            new EvilForsen(), 
+            new Hades(),     
+            new Zote()    
         );
 
-        // --- SEQUÊNCIA DE BATALHAS ---
         List<Batalha> historicoBatalhas = new ArrayList<>();
         boolean jogadorVenceuTudo = true;
 

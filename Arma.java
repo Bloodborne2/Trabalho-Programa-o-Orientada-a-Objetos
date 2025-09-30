@@ -24,11 +24,9 @@ public abstract class Arma {
         Random rd = new Random();
         int sorteio = rd.nextInt(0,100);
         if( sorteio < this.chance ){
-            //--caso positivo
             System.out.println("Ataque atingiu o inimigo");
             return this.dano;
         } else {
-            //--caso negativo
            System.out.println("Ataque não atingiu o inimigo.");
            return 0;
         }

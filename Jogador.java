@@ -14,7 +14,6 @@ public class Jogador extends Criatura {
         
         Scanner sc = new Scanner(System.in);
 
-        //--MENSAGEM
         System.out.println("Escolha sua arma: ");
         int n = 1;
         for( Arma arma : armas ){
@@ -23,13 +22,12 @@ public class Jogador extends Criatura {
             n++;
         }
 
-        //--ESCOLHA
         int escolha;
         try {
             escolha = sc.nextInt();
         } catch (java.util.InputMismatchException e) {
-            sc.next(); // Limpa o buffer de entrada
-            escolha = -1; // Força a re-entrada
+            sc.next();
+            escolha = -1; 
         }
 
         while( escolha < 1 || escolha >= n ){
@@ -42,7 +40,6 @@ public class Jogador extends Criatura {
             }
         }
 
-        //--APLICA DANO
         Arma armaSelecionada = armas[escolha-1];
         int danoDaArma = armaSelecionada.getDano();
         

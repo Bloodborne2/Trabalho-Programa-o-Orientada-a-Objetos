@@ -4,7 +4,7 @@ public class Pistola extends Arma {
 
     public Pistola(){
         super("Pistola", 200, 100 );
-        this.municao = 5; // Munição inicial
+        this.municao = 5;
     }
 
     @Override

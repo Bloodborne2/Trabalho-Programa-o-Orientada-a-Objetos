@@ -3,8 +3,7 @@ import java.util.Random;
 public class Hades extends Inimigo {
 
     public Hades() {
-        // Vida baixa, ataque alto, defesa com chance de esquiva.
-        super("Hades, o imortal", 600, 70, new Esquiva(30) ); 
+        super("Hades, o imortal", 600, 70, new Bloqueio(30) ); 
     }
 
     @Override
